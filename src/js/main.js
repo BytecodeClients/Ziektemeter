@@ -1,6 +1,6 @@
-$(document).ready(function(){
-  let workingJS = () => {
-    console.log('Custom Javascript loaded');
-  }
-  workingJS();
+$(document).ready(function () {
+  $('.increaseOverTime').each(() => {
+    //do stuff
+  })
+```
 });
