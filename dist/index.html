@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Ziektemeter</title>
 </head>
+
 <body>
-<header>
-  <img src="img/logo.png">
-</header>
+  <header>
+    <img src="img/logo.png">
+  </header>
 <div id="main" class="container">
     <h1 class="title">
             De welvaartsziekte
@@ -38,12 +40,7 @@
             <div class="livenow">LIVE NOW</div>
         </div>
     </div>    <div id="piechart" class="container grid">
-        <div id="pie"></div>
-        <ul>
-            <li>1 Welvaartsziekte</li>
-            <li>2 Welvaartsziekte</li>
-            <li>Geen Welvaartsziekte</li>
-        </ul>
+        <canvas id="myChart" width="400" height="400"></canvas>
     </div>    <span class="headline">
         Totaal aantal Nederlanders met welvaartsziekte(n)
     </span></div>
@@ -51,7 +48,8 @@
 <footer>
     <span>www.happyhealthy.nl</span>
 </footer>
-<script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/main.min.js"></script>
 </body>
 </html>
