@@ -1,5 +1,19 @@
 {{> header }}
 
-<h1 class="text-center" style="margin: 80px 20px">Page: {{ title }}</h1>
+<div id="main" class="container">
+    {{> entrytext }} 
+    {{> headline headline="Nederlandse zorgkosten tot nu toe dit jaar"}} 
+    {{> bigcounter count=zorgkostenDitJaar }} 
+    {{> headline headline="Totaal aantal Nederlanders met welvaartsziekte(n)"}} 
+    {{> smallcounter name="Diabetes" count="123456789"}} 
+    {{> smallcounter name="Kanker" count="987654321"}}
+    {{> piechart }}
+    {{> headline headline="Totaal aantal Nederlanders met welvaartsziekte(n)" }}
+    {{> fulllist}}
+    {{> headline headline="Nederlanders worden ouder maar óók steeds sneller ziek" }}
+    {{> headline headline="Nederlanders die doodgaan aan welvaartsziekten" }}
+    {{> headline headline="Conclusie en vraag" }}
+    {{> closingtext }} 
+</div>
 
 {{> footer }}
