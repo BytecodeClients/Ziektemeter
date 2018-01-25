@@ -1,13 +1,13 @@
 {{> header }}
 
 <div id="main" class="container">
-    {{> entrytext }} 
+    {{> text_entry }} 
     
     {{> headline 
         headline="Nederlandse zorgkosten tot nu toe dit jaar"
     }} 
     
-    {{> bigcounter 
+    {{> counter_big 
         count=zorgkostenDitJaar 
     }} 
     
@@ -15,23 +15,23 @@
         headline="Totaal aantal Nederlanders met welvaartsziekte(n)"
     }} 
     
-    {{> smallcounter 
+    {{> counter_small 
         name="Diabetes" 
         count=nederlandersMetDiabetes
     }} 
     
-    {{> smallcounter 
+    {{> counter_small 
         name="Kanker" 
         count=nederlandersMetKanker
     }}
     
-    {{> piechart }}
+    {{> chart_pie_big }}
     
     {{> headline 
         headline="Totaal aantal Nederlanders met welvaartsziekte(n)" 
     }}
     
-    {{> fulllist}}
+    {{> chart_list}}
     
     {{> headline 
         headline="Nederlanders worden ouder maar óók steeds sneller ziek" 
@@ -42,24 +42,24 @@
     }}
     
     <div class="container grid triplecounter">
-        {{> triplecounter
+        {{> counter_triple
         name="Kanker" 
         count=230}}
-        {{> triplecounter
+        {{> counter_triple
         name="Kanker" 
         count=1640}}
-        {{> triplecounter
+        {{> counter_triple
         name="Kanker" 
         count=84000}}
     </div>
 
-    {{> triplecountertext}}
+    {{> text_counter_triple}}
     
     {{> headline 
         headline="Conclusie en vraag" 
     }}
     
-    {{> closingtext }} 
+    {{> text_closing }} 
 </div>
 
 {{> footer }}
