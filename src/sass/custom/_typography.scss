@@ -90,7 +90,7 @@ h4 {
 }
 
 #fulllist>li>.counter {
-    font-size: 3.2rem;
+    font-size: 2rem;
 }
 
 footer {
@@ -102,6 +102,9 @@ footer {
 @media screen and (min-width: $breakpoint-tablet) {
     .counter{
         font-size: 4rem;
+    }
+    #fulllist>li>.counter {
+        font-size: 3.2rem;
     }
 }
 

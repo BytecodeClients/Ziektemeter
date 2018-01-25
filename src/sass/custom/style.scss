@@ -37,7 +37,7 @@ header img {
     display: grid;
 }
 
-.linechart {
+.linechartcontainer {
     grid-template-columns: 1fr 1fr;
 }
 
@@ -54,6 +54,7 @@ header img {
 }
 
 .triplecounter {
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
 }

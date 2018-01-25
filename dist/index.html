@@ -127,13 +127,26 @@
             Nederlanders worden ouder maar óók steeds sneller ziek
         </span>
     </div>
-    <div class="container grid linechart">
-    <div class="container grid">
-        <canvas id="linechart1" width="400" height="400"></canvas>
+    <div class="container grid linechartcontainer">
+    <div class="container">
+        <canvas class="linechart" id="linechart1" width="400" height="400"></canvas>
     </div>
-    <div class="container grid">
-        <canvas id="linechart2" width="400" height="400"></canvas>
-    </div>    </div>
+    <div class="container">
+        <canvas class="linechart" id="linechart2" width="400" height="400"></canvas>
+    </div>
+    <div id="linechart1legend" class="container grid linechartlegend">
+    <ul>
+        <li>Levensverwachting (mannen)</li>
+        <li>Levensverwachting (vrouwen)</li>
+    </ul>
+    </div>
+    <div id="linechart2legend" class="container grid linechartlegend">
+    <ul>
+        <li>Levensjaren zonder chronische ziekte (% mannen)</li>
+        <li>Levensjaren zonder chronische ziekte (% vrouwen)</li>
+    </ul>
+    </div>
+    </div>
 
     <div class="container">
         <span class="headline">
