@@ -1,7 +1,16 @@
 $(document).ready(function () {
-  $('.increaseOverTime').each(() => {
-    //do stuff
-  })
+
+  const increaseValues = () => {
+    $('.increaseOverTime').each(function() {
+      const currentValue = Number($(this).text().replace(/\./g,''));
+      const increasePerInterval = Math.floor(Math.random() * 1000); // TODO: Add a data attribute on the element that will give the increase per interval
+      const newValue = currentValue + increasePerInterval;
+      const newValueFormatted = new Intl.NumberFormat().format(newValue);
+      $(this).text(newValueFormatted);
+    });
+  };
+
+  setInterval(increaseValues, 1000);
 });
 
 const ctx = document.getElementById("myChart").getContext('2d');
