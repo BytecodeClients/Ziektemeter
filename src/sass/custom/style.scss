@@ -42,6 +42,10 @@ header img {
     display: grid;
 }
 
+.linechart{
+    grid-template-columns: 1fr 1fr;
+}
+
 .smallcounter {
     grid-template-columns: 3fr 5fr;
 }
