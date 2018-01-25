@@ -1,0 +1,20 @@
+@media screen and (max-width: 40rem) {
+    #piechart, 
+    .linechartcontainer > .container {
+        margin: auto;
+    }
+    .bigpiechart,
+    .linechartcontainer {
+        grid-template-columns: 1fr !important;
+    }
+    #linechart1legend {
+        grid-row: 2;
+    }
+}
+
+@media screen and (min-width: 40rem) {
+    #main {
+        width: 40rem;
+        margin: auto;
+    }
+}
