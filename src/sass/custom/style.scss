@@ -51,6 +51,9 @@ header img {
 
 .smallcounter {
     grid-template-columns: 3fr 5fr;
+    .counter {
+        text-align: right;
+    }
 }
 
 .triplecounter {
@@ -90,16 +93,9 @@ footer {
     margin: 10px 0px 10px 0px;
 }
 
-@media screen and (min-width: $breakpoint-laptop) {
+@media screen and (min-width: 40rem) {
     #main {
-        padding-left: 10em;
-        padding-right: 10em;
-    }
-}
-
-@media screen and (min-width: $breakpoint-desktop) {
-    #main {
-        padding-left: 20em ;
-        padding-right: 20em;
+        width: 40rem;
+        margin: auto;
     }
 }

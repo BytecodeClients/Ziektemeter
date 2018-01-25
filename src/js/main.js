@@ -3,14 +3,14 @@ $(document).ready(function () {
   const increaseValues = () => {
     $('.increaseOverTime').each(function () {
       const currentValue = Number($(this).text().replace(/\./g, ''));
-      const increasePerInterval = Math.floor(Math.random() * 1000); // TODO: Add a data attribute on the element that will give the increase per interval
+      const increasePerInterval = Math.floor(Math.random() * 50); // TODO: Add a data attribute on the element that will give the increase per interval
       const newValue = currentValue + increasePerInterval;
       const newValueFormatted = new Intl.NumberFormat().format(newValue);
       $(this).text(newValueFormatted);
     });
   };
 
-  setInterval(increaseValues, 1000);
+  setInterval(increaseValues, 50);
 
   const ctx0 = document.getElementById("piechart").getContext('2d');
   // Big Pie Chart
