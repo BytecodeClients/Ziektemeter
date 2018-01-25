@@ -2,17 +2,49 @@
 
 <div id="main" class="container">
     {{> entrytext }} 
-    {{> headline headline="Nederlandse zorgkosten tot nu toe dit jaar"}} 
-    {{> bigcounter count=zorgkostenDitJaar }} 
-    {{> headline headline="Totaal aantal Nederlanders met welvaartsziekte(n)"}} 
-    {{> smallcounter name="Diabetes" count="123456789"}} 
-    {{> smallcounter name="Kanker" count="987654321"}}
+    
+    {{> headline 
+        headline="Nederlandse zorgkosten tot nu toe dit jaar"
+    }} 
+    
+    {{> bigcounter 
+        count=zorgkostenDitJaar 
+    }} 
+    
+    {{> headline 
+        headline="Totaal aantal Nederlanders met welvaartsziekte(n)"
+    }} 
+    
+    {{> smallcounter 
+        name="Diabetes" 
+        count=nederlandersMetDiabetes
+    }} 
+    
+    {{> smallcounter 
+        name="Kanker" 
+        count=nederlandersMetKanker
+    }}
+    
     {{> piechart }}
-    {{> headline headline="Totaal aantal Nederlanders met welvaartsziekte(n)" }}
+    
+    {{> headline 
+        headline="Totaal aantal Nederlanders met welvaartsziekte(n)" 
+    }}
+    
     {{> fulllist}}
-    {{> headline headline="Nederlanders worden ouder maar óók steeds sneller ziek" }}
-    {{> headline headline="Nederlanders die doodgaan aan welvaartsziekten" }}
-    {{> headline headline="Conclusie en vraag" }}
+    
+    {{> headline 
+        headline="Nederlanders worden ouder maar óók steeds sneller ziek" 
+    }}
+    
+    {{> headline 
+        headline="Nederlanders die doodgaan aan welvaartsziekten" 
+    }}
+    
+    {{> headline 
+        headline="Conclusie en vraag" 
+    }}
+    
     {{> closingtext }} 
 </div>
 
