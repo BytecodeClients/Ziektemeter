@@ -27,9 +27,11 @@
         </span>
     </div>    
     <div class="container">
-        <div class="counter bigcounter">
-            <span class="increaseOverTime">95.642.642.124</span>
-            <div class="livenow">LIVE NOW</div>
+        <div class="bigcounter countercontainer">
+            <span>
+                <span class="counter">€<span class="increaseOverTime">95.642.642.124</span></span>
+                <div class="livenow">LIVE NOW</div>
+            </span>
         </div>
     </div>    
     <div class="container">
@@ -37,20 +39,41 @@
             Totaal aantal Nederlanders met welvaartsziekte(n)
         </span>
     </div>    
+    <div class="container">
+        <div class="sidenote">
+           Van de 17 miljoen Nederlanders
+        </div>
+    </div>
+    
     <div class="container grid smallcounter">
         <h3>Diabetes:</h3>
-        <div class="counter">123.456.789
-            <div class="livenow">LIVE NOW</div>
+        <div class="countercontainer">
+            <span>
+                <span class="counter increaseOverTime">123.456.789</span>
+                <div class="livenow">LIVE NOW</div>
+            </span>
         </div>
     </div>    
     <div class="container grid smallcounter">
         <h3>Kanker:</h3>
-        <div class="counter">987.654.321
-            <div class="livenow">LIVE NOW</div>
+        <div class="countercontainer">
+            <span>
+                <span class="counter increaseOverTime">987.654.321</span>
+                <div class="livenow">LIVE NOW</div>
+            </span>
         </div>
     </div>    
-    <div id="piechart" class="container grid">
-        <canvas id="myChart" width="400" height="400"></canvas>
+    <div class="container grid bigpiechart">
+        <canvas id="piechart" width="300" height="300"></canvas>
+        <div class="aligner">
+            <div id="piechartlegend">
+                <ul class="legend">
+                    <li> 1 Welvaartsziekte</li>
+                    <li> 2 Welvaartsziekte</li>
+                    <li> Geen Welvaartsziekte</li>
+                </ul>
+            </div>
+        </div>
     </div>    
     <div class="container">
         <span class="headline">
@@ -60,64 +83,102 @@
     <ul id="fulllist">
         <li>
             <span>Overgewicht</span>
-            <div class="counter">€95.642.642.123</div>
+            <div class="counter">95.642.642.123</div>
         </li>
         <li>
             <span>Hoge bloeddruk</span>
-            <div class="counter">€95.642.642.123</div>
+            <div class="counter">95.642.642.123</div>
         </li>
         <li>
             <span>Hoog cholesterol</span>
-            <div class="counter">€95.642.642.123</div>
+            <div class="counter">95.642.642.123</div>
         </li>
         <li>
             <span>Obesitas</span>
-            <div class="counter">€95.642.642.123</div>
+            <div class="counter">95.642.642.123</div>
         </li>
         <li>
             <span>Diabetes type II</span>
-            <div class="counter">€95.642.642.123</div>
+            <div class="counter">95.642.642.123</div>
         </li>
         <li>
             <span>Hart- en vaatziekten</span>
-            <div class="counter">€95.642.642.123</div>
+            <div class="counter">95.642.642.123</div>
         </li>
         <li>
             <span>Burnout</span>
-            <div class="counter">€95.642.642.123</div>
+            <div class="counter">95.642.642.123</div>
         </li>
         <li>
             <span>Pre-diabetes</span>
-            <div class="counter">€95.642.642.123</div>
+            <div class="counter">95.642.642.123</div>
         </li>
         <li>
             <span>Depressie</span>
-            <div class="counter">€95.642.642.123</div>
+            <div class="counter">95.642.642.123</div>
         </li>
         <li>
             <span>Kanker*</span>
-            <div class="counter">€95.642.642.123</div>
+            <div class="counter">95.642.642.123</div>
         </li>
     </ul>    
     <div class="container">
         <span class="headline">
             Nederlanders worden ouder maar óók steeds sneller ziek
         </span>
-    </div>    
+    </div>
+    <div class="container grid linechartcontainer">
+    <div class="container">
+        <canvas class="linechart" id="linechart1" width="400" height="400"></canvas>
+    </div>
+    <div class="container">
+        <canvas class="linechart" id="linechart2" width="400" height="400"></canvas>
+    </div>
+    <div id="linechart1legend" class="container grid linechartlegend">
+    <ul>
+        <li>Levensverwachting (mannen)</li>
+        <li>Levensverwachting (vrouwen)</li>
+    </ul>
+    </div>
+    <div id="linechart2legend" class="container grid linechartlegend">
+    <ul>
+        <li>Levensjaren zonder chronische ziekte (% mannen)</li>
+        <li>Levensjaren zonder chronische ziekte (% vrouwen)</li>
+    </ul>
+    </div>
+    </div>
+
     <div class="container">
         <span class="headline">
             Nederlanders die doodgaan aan welvaartsziekten
         </span>
     </div>    
+    <div class="container grid triplecounter">
+        <div class="container">
+            <div class="counter">
+                <span class="increaseOverTime">230</span>
+            </div>
+            <h4>Kanker</h4>
+        </div>        <div class="container">
+            <div class="counter">
+                <span class="increaseOverTime">1640</span>
+            </div>
+            <h4>Kanker</h4>
+        </div>        <div class="container">
+            <div class="counter">
+                <span class="increaseOverTime">84000</span>
+            </div>
+            <h4>Kanker</h4>
+        </div>    </div>
+
+    <div class="text">De meeste Nederlanders sterven op dit moment aan "welvaartsziekten". Jaarlijks sterven er ongeveer 140.000 Nederlanders, waarvan 60% aan wlvaartsziekten. Deze zijn met name kanker, diabetes type II, hart- en vaatziekten en obesitas</div>    
     <div class="container">
         <span class="headline">
             Conclusie en vraag
         </span>
     </div>    
-    <div class="text">De meeste Nederlanders sterven op dit moment aan "welvaartsziekten"</div>
-    <div class="text">Hieronder vind je een overzicht van de schokkende aantallen per welvaartsziekten en waarom we wél steeds ouder worden, maar
-            ook steeds eerder ziek.</div>
-    <div class="text">Voor de volledigheid: Nederland telt op dit moment 17 miljoen inwoners.</div></div>
+    <div class="text">De meeste Nederlanders sterven op dit moment aan "welvaartsziekten" en uit onderzoek blijkt dat 95% te wijten is aan leefstijl. Aan preventie doen we ook vrijwel niets, slechts 4$% van de zorgkosten gaan daar naartoe.</div>
+    <div class="text">Warom doen we in vredesnaam nog zo weinig met gezonde leefstijl en dan bij voorkeur preventief?</div></div>
 
 <footer>
     <span>www.happyhealthy.nl</span>

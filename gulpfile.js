@@ -28,6 +28,7 @@ const source = {
         vendor: './src/js/vendor/**/*.js'
     },
     images: './src/img/**/*',
+    assets: './src/assets/**/*',
 };
 
 const watch = {
@@ -38,7 +39,8 @@ const watch = {
         vendor: './src/js/vendor/**/*.js'
     },
     images: './src/img/**/*',
-    handlebars: './views/**/*.handlebars'
+    handlebars: './views/**/*.handlebars',
+    assets: './src/assets**/*',
 };
 
 const output = {
@@ -46,7 +48,8 @@ const output = {
     bootstrap: './dist/assets/css/bootstrap',
     scripts: './dist/assets/js',
     images: './dist/img',
-    handlebars: './dist'
+    handlebars: './dist',
+    assets: './dist',
 };
 
 const handlebars = {
@@ -86,6 +89,11 @@ const autoprefixerBrowsers = [
     'android >= 4.4',
     'bb >= 10'
 ];
+
+gulp.task('assets', () => {
+    return gulp.src(source.assets)
+        .pipe(gulp.dest(output.assets))
+ })
 
 // Compile and automatically prefix stylesheets
 gulp.task('sass', () => {
@@ -145,7 +153,7 @@ gulp.task('handlebars', () => {
 });
 
 // Sets browsersync
-gulp.task('serve', ['handlebars', 'sass', 'scripts-custom', 'scripts-vendor', 'images'], () => {
+gulp.task('serve', ['handlebars', 'sass', 'scripts-custom', 'scripts-vendor', 'images', 'assets'], () => {
     browserSync.init({
         server: {
             baseDir: './dist'
@@ -158,6 +166,7 @@ gulp.task('serve', ['handlebars', 'sass', 'scripts-custom', 'scripts-vendor', 'i
     gulp.watch(watch.scripts.vendor, ['scripts-vendor']).on('change', browserSync.reload);
     gulp.watch(watch.images, ['images']).on('change', browserSync.reload);
     gulp.watch(watch.handlebars, ['handlebars']).on('change', browserSync.reload);
+    gulp.watch(watch.assets, ['assets']).on('change', browserSync.reload);
 });
    
 // Initialize default task

@@ -4,6 +4,9 @@
 @import 'typography';
 @import 'buttons';
 @import 'animations';
+@import 'charts';
+
+
 body {
     margin: 0;
 }
@@ -21,8 +24,8 @@ header img {
 }
 
 #main {
-    padding-left: 4em;
-    padding-right: 4em;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .container {
@@ -34,8 +37,26 @@ header img {
     display: grid;
 }
 
+.linechartcontainer {
+    grid-template-columns: 1fr 1fr;
+}
+
+.bigpiechart {
+    grid-template-columns: 3fr 5fr;
+}
+
+.bigcounter {
+    margin-bottom: 30px;
+}
+
 .smallcounter {
     grid-template-columns: 3fr 5fr;
+}
+
+.triplecounter {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
 }
 
 .beforelist {
@@ -43,35 +64,22 @@ header img {
     margin-bottom: 0px
 }
 
+.countercontainer span {
+    position: relative;
+}
+
 .livenow {
+    position: absolute;
+    right: 0%;
     border-radius: 5px;
     border-style: solid;
     border-width: thin;
     border-color: red;
     color: red;
     font-size: 16px;
-    padding: 2px 2px 2px 2px;
+    margin: 10px 0px 10px 0px;
+    padding: 2px 4px 2px 4px;
     max-width: 80px;
-}
-
-#piechart {
-    max-width: 500px;
-}
-
-#fulllist {
-    margin-top: 40px;
-}
-
-#fulllist>li {
-    font-size: 24px;
-    color: grey;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-top: 1px dashed grey;
-}
-
-#fulllist>li:last-child {
-    border-bottom: 1px dashed grey;
 }
 
 footer {
@@ -80,4 +88,18 @@ footer {
     height: 56px;
     line-height: 56px;
     margin: 10px 0px 10px 0px;
+}
+
+@media screen and (min-width: $breakpoint-laptop) {
+    #main {
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+    #main {
+        padding-left: 20em ;
+        padding-right: 20em;
+    }
 }
