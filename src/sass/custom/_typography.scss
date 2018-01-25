@@ -32,8 +32,23 @@ h3 {
     font-size: 2rem;
 }
 
+h4 {
+    font-family: Hero, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #646464;
+    font-size: 1.5rem;
+}
+
 .smallcounter .counter {
     font-size: 4rem;
+}
+
+.triplecounter .counter{
+    font-size: 2rem;
+}
+
+.triplecounter{
+    text-align: center;
 }
 
 .headline {

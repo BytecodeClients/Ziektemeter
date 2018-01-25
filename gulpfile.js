@@ -28,7 +28,7 @@ const source = {
         vendor: './src/js/vendor/**/*.js'
     },
     images: './src/img/**/*',
-    assets: './src/assets**/*',
+    assets: './src/assets/**/*',
 };
 
 const watch = {
