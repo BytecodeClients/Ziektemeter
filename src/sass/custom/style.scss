@@ -47,7 +47,13 @@ header img {
     margin-bottom: 0px
 }
 
+.counter span{
+    position: relative;
+}
+
 .livenow {
+    position: absolute;
+    right: 0%;
     border-radius: 5px;
     border-style: solid;
     border-width: thin;
