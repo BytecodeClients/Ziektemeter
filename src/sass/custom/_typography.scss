@@ -3,22 +3,23 @@
     src: url("/fonts/Hero.otf") format("opentype");
 }
 
+body{
+    font-family: $standardfont;
+}
+
 .title {
     text-align: center;
-    font-family: Hero, Arial, Helvetica, sans-serif;
     font-weight: 300;
     letter-spacing: 2px;
 }
 
 h1 {
-    font-family: Hero, Arial, Helvetica, sans-serif;
     font-weight: 500;
     color: #646464;
     font-size: 2.2rem;
 }
 
 h2 {
-    font-family: Hero, Arial, Helvetica, sans-serif;
     font-weight: 500;
     color: #646464;
     font-size: 2.4rem;
@@ -26,14 +27,12 @@ h2 {
 }
 
 h3 {
-    font-family: Hero, Arial, Helvetica, sans-serif;
     font-weight: 500;
     color: #646464;
     font-size: 2rem;
 }
 
 h4 {
-    font-family: Hero, Arial, Helvetica, sans-serif;
     font-weight: 500;
     color: #646464;
     font-size: 1.5rem;
@@ -63,7 +62,6 @@ h4 {
 }
 
 .text {
-    font-family: Hero, Arial, Helvetica, sans-serif;
     color: #646464;
     font-size: 1.2rem;
     line-height: 38px;
@@ -74,6 +72,10 @@ h4 {
 
 .counter {
     font-size: 6rem;
+}
+
+.sidenote{
+    color: #646464;
 }
 
 #fulllist>li>.counter {
