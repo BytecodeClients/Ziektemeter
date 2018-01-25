@@ -1,0 +1,60 @@
+#piechart {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fulllist {
+    margin-top: 40px;
+}
+
+#fulllist>li {
+    font-size: 24px;
+    color: grey;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px dashed grey;
+}
+
+#fulllist>li:last-child {
+    border-bottom: 1px dashed grey;
+}
+
+/* Bolletjes voor legenda van Big_Piechart */
+#piechartlegend > ul > li::before{
+    display: inline-block;
+    width:15px;
+    height:15px;
+    border-radius: 15px;
+    content: '';
+}
+#piechartlegend > ul > li:nth-child(1)::before{
+    background-color: rgb(255, 99, 132);
+}
+
+#piechartlegend > ul > li:nth-child(2)::before{
+    background-color: rgb(54, 162, 235);
+}
+
+#piechartlegend > .legend > li:nth-child(3)::before{
+    background-color: rgb(255, 205, 86);
+}
+
+@media screen and (min-width: $breakpoint-laptop) {
+    #piechart {
+        max-width: 350px;
+        max-height: 350px;
+    }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+    #piechart {
+        max-width: 500px;
+        max-height: 500px;
+    }
+}

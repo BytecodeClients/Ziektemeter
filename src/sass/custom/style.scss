@@ -4,13 +4,8 @@
 @import 'typography';
 @import 'buttons';
 @import 'animations';
+@import 'charts';
 
-@media screen and (min-width: $breakpoint-laptop){
-    #main {
-        padding-left: 4em;
-        padding-right: 4em;
-    }
-}
 
 body {
     margin: 0;
@@ -42,8 +37,16 @@ header img {
     display: grid;
 }
 
-.linechart{
+.linechart {
     grid-template-columns: 1fr 1fr;
+}
+
+.bigpiechart {
+    grid-template-columns: 3fr 5fr;
+}
+
+.bigcounter {
+    margin-bottom: 30px;
 }
 
 .smallcounter {
@@ -60,7 +63,7 @@ header img {
     margin-bottom: 0px
 }
 
-.countercontainer span{
+.countercontainer span {
     position: relative;
 }
 
@@ -78,30 +81,24 @@ header img {
     max-width: 80px;
 }
 
-#piechart {
-    max-width: 500px;
-}
-
-#fulllist {
-    margin-top: 40px;
-}
-
-#fulllist>li {
-    font-size: 24px;
-    color: grey;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-top: 1px dashed grey;
-}
-
-#fulllist>li:last-child {
-    border-bottom: 1px dashed grey;
-}
-
 footer {
     background-color: #AFDB45;
     text-align: center;
     height: 56px;
     line-height: 56px;
     margin: 10px 0px 10px 0px;
+}
+
+@media screen and (min-width: $breakpoint-laptop) {
+    #main {
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+    #main {
+        padding-left: 20em ;
+        padding-right: 20em;
+    }
 }

@@ -19,13 +19,14 @@ $(document).ready(function () {
     data: {
       datasets: [{
         data: [10, 20, 30],
+        backgroundColor:["rgb(255, 99, 132)","rgb(54, 162, 235)","rgb(255, 205, 86)"]
       }],
 
       // These labels appear in the legend and in the tooltips when hovering different arcs
       labels: [
-        'Red',
-        'Green',
-        'Orange'
+        '1 Welvaartsziekte',
+        '2 Welvaartsziekte',
+        'Geen Welvaartsziekte',
       ]
     },
     options: {
@@ -46,12 +47,12 @@ $(document).ready(function () {
       datasets: [{ 
           data: [70,75,76,77,79,81,82,83,85],
           label: "rood",
-          borderColor: "#3e95cd",
+          borderColor: "#ff0000",
           fill: false
         }, { 
           data: [70,72,73,75,75,77,82,83,85],
           label: "blauw",
-          borderColor: "#8e5ea2",
+          borderColor: "#0000ff",
           fill: false
         }, { 
           data: [50,72,73,75,75,77,82,83,85],
@@ -62,6 +63,14 @@ $(document).ready(function () {
       ]
     },
     options: {
+      scales: {
+        yAxes: [{
+          scaleLabel: {
+            display: true,
+            labelString: 'Levensjaren'
+          }
+        }]
+      },
       responsive: true,
       legend: {
         display: false,
