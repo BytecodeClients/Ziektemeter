@@ -8,7 +8,7 @@
     }} 
     
     {{> counter_big 
-        count=zorgkostenDitJaar 
+        count=counter1 increase=increaseCounterBy_1
     }} 
     
     {{> headline 
@@ -23,12 +23,12 @@
     
     {{> counter_small 
         name="Diabetes" 
-        count=nederlandersMetDiabetes
+        count=counter2 increase=increaseCounterBy_2
     }} 
     
     {{> counter_small 
         name="Kanker" 
-        count=nederlandersMetKanker
+        count=counter3 increase=increaseCounterBy_3
     }}
     
     {{> chart_pie_big }}
@@ -54,13 +54,13 @@
     <div class="container grid triplecounter">
         {{> counter_triple
         name="Kanker" 
-        count=230}}
+        count=counter4 increase=increaseCounterBy_4}}
         {{> counter_triple
         name="Kanker" 
-        count=1640}}
+        count=counter5 increase=increaseCounterBy_5}}
         {{> counter_triple
         name="Kanker" 
-        count=84000}}
+        count=counter6 increase=increaseCounterBy_6}}
     </div>
 
     {{> text_counter_triple}}
