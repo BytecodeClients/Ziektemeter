@@ -3,14 +3,14 @@ $(document).ready(function () {
   const increaseValues = () => {
     $('.increaseOverTime').each(function () {
       const currentValue = Number($(this).text().replace(/\./g, ''));
-      const increasePerInterval = Math.floor(Math.random() * 50); // TODO: Add a data attribute on the element that will give the increase per interval
+      const increasePerInterval = Math.floor(Math.random() * $(this).attr('data-increase')); // TODO: Add a data attribute on the element that will give the increase per interval
       const newValue = currentValue + increasePerInterval;
       const newValueFormatted = new Intl.NumberFormat().format(newValue);
       $(this).text(newValueFormatted);
     });
   };
 
-  setInterval(increaseValues, 50);
+  setInterval(increaseValues, 1000);
 
   const ctx0 = document.getElementById("piechart").getContext('2d');
   // Big Pie Chart
@@ -18,7 +18,7 @@ $(document).ready(function () {
     type: 'pie',
     data: {
       datasets: [{
-        data: [10, 20, 30],
+        data: [10, 20, 30], //getallen voor de pie chart
         backgroundColor:["rgb(255, 99, 132)","rgb(54, 162, 235)","rgb(255, 205, 86)"]
       }],
 
@@ -45,19 +45,17 @@ $(document).ready(function () {
     data: {
       labels: [1940,1950,1960,1970,1980,1990,2000,2010,2020],
       datasets: [{ 
-          data: [70,75,76,77,79,81,82,83,85],
-          label: "rood",
+          data: [70,75,76,77,79,81,82,83,85], //getallen voor de eerste line
+          label: "rood", //label voor de tweede line
           borderColor: "#ff0000",
           fill: false
         }, { 
-          data: [70,72,73,75,75,77,82,83,85],
-          label: "blauw",
+          data: [70,72,73,75,75,77,82,83,85], //getallen voor de tweede line
+          label: "blauw", //label voor de tweede line
           borderColor: "#0000ff",
           fill: false
         }, { 
-          data: [50,72,73,75,75,77,82,83,85],
-          label: "blauw",
-          borderColor: "#8e5ea2",
+          data: [50,72,73,75,75,77,82,83,85], //line wordt niet weergegeven, maar zorgt voor eventueel grotere axis als dit nog gewenst is.
           showLine: false
         }
       ]
@@ -86,19 +84,17 @@ $(document).ready(function () {
     data: {
       labels: [1940,1950,1960,1970,1980,1990,2000,2010,2020],
       datasets: [{ 
-          data: [70,75,76,77,79,81,82,83,85],
-          label: "rood",
-          borderColor: "#3e95cd",
+          data: [70,75,76,77,79,81,82,83,85], //getallen voor de eerste line
+          label: "rood", //label voor de tweede line
+          borderColor: "#ff0000",
           fill: false
         }, { 
-          data: [70,72,73,75,75,77,82,83,85],
-          label: "blauw",
-          borderColor: "#8e5ea2",
+          data: [70,72,73,75,75,77,82,83,85], //getallen voor de tweede line
+          label: "blauw", //label voor de tweede line
+          borderColor: "#0000ff",
           fill: false
         }, { 
-          data: [50,72,73,75,75,77,82,83,85],
-          label: "blauw",
-          borderColor: "#8e5ea2",
+          data: [50,72,73,75,75,77,82,83,85], //line wordt niet weergegeven, maar zorgt voor eventueel grotere axis als dit nog gewenst is.
           showLine: false
         }
       ]
