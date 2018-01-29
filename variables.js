@@ -1,17 +1,17 @@
 const variables = {
     //Counters
     counter1: '95.642.642.124', //Op welk aantal moet de counter beginnen?
-    counter2: '123.456.789',
-    counter3: '987.654.321',
-    counter4: '95.642.642.124',
-    counter5: '123.456.789',
-    counter6: '987.654.321',
-    increaseCounterBy_1: 1000, //Per hoeveel moet de counter oplopen?
-    increaseCounterBy_2: 10000,
-    increaseCounterBy_3: 10,
-    increaseCounterBy_4: 10,
-    increaseCounterBy_5: 10,
-    increaseCounterBy_6: 10,
+    counter2: '1.200.000',
+    counter3: '109.000',
+    counter4: '15.000',
+    counter5: '20.000',
+    counter6: '40.000',
+    increaseCounterBy_1: 70, //Per hoeveel moet de counter oplopen?
+    increaseCounterBy_2: 0.0019,
+    increaseCounterBy_3: 0,
+    increaseCounterBy_4: 0,
+    increaseCounterBy_5: 0,
+    increaseCounterBy_6: 0,
     //List Items
     listitem1: 'Diabetes type 2 ',
     listnumber1: '1.200.000',

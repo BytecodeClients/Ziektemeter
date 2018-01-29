@@ -18,15 +18,16 @@ $(document).ready(function () {
     type: 'pie',
     data: {
       datasets: [{
-        data: [10, 20, 30], //getallen voor de pie chart
-        backgroundColor:["rgb(255, 99, 132)","rgb(54, 162, 235)","rgb(255, 205, 86)"]
+        data: [8.02,4.07,2.06,2.88], //getallen voor de pie chart
+        backgroundColor:["rgb(255, 99, 132)","rgb(54, 162, 235)","rgb(255, 205, 86)","rgb(86, 255, 86)"]
       }],
 
       // These labels appear in the legend and in the tooltips when hovering different arcs
       labels: [
-        '1 Welvaartsziekte',
-        '2 Welvaartsziekte',
-        'Geen Welvaartsziekte',
+        'Geen chronische ziekten',
+        '1 chronische ziekte',
+        '2 chronische ziekten',
+        '3 of meer chronische ziekten',
       ]
     },
     options: {
