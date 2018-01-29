@@ -39,6 +39,73 @@ $(document).ready(function () {
     }
   });
 
+  const ctx3 = document.getElementById("smallpiechart0").getContext('2d');
+  // Small Pie Chart 0
+  const mySmallPieChart0 = new Chart(ctx3, {
+    type: 'pie',
+    data: {
+      datasets: [{
+        data: [4,96], //getallen voor de pie chart
+        backgroundColor:["rgb(54, 162, 235)","#dd2526"]
+      }],
+
+      // These labels appear in the legend and in the tooltips when hovering different arcs
+      labels: [
+        'Preventie',
+        'Nazorg',
+      ]
+    },
+    options: {
+      responsive: true,
+      legend: {
+        display: false,
+        position: 'right',
+      },
+      tooltips: {
+        mode: 'label',
+        callbacks: {
+          label: function(tooltipItem, data) {
+            return data['datasets'][0]['data'][tooltipItem['index']] + '%';
+          }
+        }
+      }
+    }
+  });
+
+  const ctx4 = document.getElementById("smallpiechart1").getContext('2d');
+  // Small Pie Chart 1
+  const mySmallPieChart1 = new Chart(ctx4, {
+    type: 'pie',
+    data: {
+      datasets: [{
+        data: [5,95], //getallen voor de pie chart
+        backgroundColor:["rgb(54, 162, 235)","#dd2526"]
+      }],
+
+      // These labels appear in the legend and in the tooltips when hovering different arcs
+      labels: [
+        'Erfelijkheid',
+        'Leefstijl',
+      ]
+    },
+    options: {
+      responsive: true,
+      legend: {
+        display: false,
+        position: 'right',
+      },
+      tooltips: {
+        mode: 'label',
+        callbacks: {
+          label: function(tooltipItem, data) {
+            return data['datasets'][0]['data'][tooltipItem['index']] + '%';
+          }
+        }
+      }
+    }
+  });
+
+
   //Line Chart 1
   const ctx1 = document.getElementById("linechart1").getContext('2d');
   const lineChart1 = new Chart(ctx1, {

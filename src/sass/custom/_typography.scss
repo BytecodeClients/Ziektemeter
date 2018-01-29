@@ -103,7 +103,23 @@ footer {
     color: white;
 }
 
+#fulllist>li>.counter{
+    font-size: 1.4rem;
+    text-align: right;
+}
+.piechartdouble .headline{
+    font-size: 1rem;
+}
+
+.piechartdouble .legend li{
+    font-size: 1rem;
+}    
+
 @media screen and (min-width: $breakpoint-tablet) {
+    #fulllist>li>.counter{
+        font-size: 2rem;
+    }
+
     .counter{
         font-size: 4rem;
     }

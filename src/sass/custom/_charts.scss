@@ -22,7 +22,7 @@
     font-size: 24px;
     color: grey;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     border-top: 1px dashed grey;
 }
 
@@ -38,29 +38,39 @@
 }
 */
 
+/*Small Piecharts*/
+.piechartdouble{
+    grid-template-columns: 1fr 1fr;
+}
+
+.piechartdouble .piechartlegend>ul>li:nth-child(1)::before {
+    background-color: #dd2526;
+}
+
 /* Bolletjes voor legenda van Big_Piechart */
 
-#piechartlegend>ul>li::before {
+.piechartlegend>ul>li::before {
     display: inline-block;
     width: 15px;
     height: 15px;
     border-radius: 15px;
+    margin-right: 10px;
     content: '';
 }
 
-#piechartlegend>ul>li:nth-child(1)::before {
+.piechartlegend>ul>li:nth-child(1)::before {
     background-color: rgb(255, 99, 132);
 }
 
-#piechartlegend>ul>li:nth-child(2)::before {
+.piechartlegend>ul>li:nth-child(2)::before {
     background-color: rgb(54, 162, 235);
 }
 
-#piechartlegend>.legend>li:nth-child(3)::before {
+.piechartlegend>.legend>li:nth-child(3)::before {
     background-color: rgb(255, 205, 86);
 }
 
-#piechartlegend > .legend > li:nth-child(4)::before {
+.piechartlegend > .legend > li:nth-child(4)::before {
     background-color: rgb(86, 255, 86);
 }
 
@@ -71,10 +81,8 @@
     width: 15px;
     height: 15px;
     border-radius: 15px;
-    margin-right: 20px;
     content: '';
 }
-
 
 #linechart1legend>ul>li:nth-child(1)::before {
     background-color: rgb(54, 162, 235);
@@ -92,8 +100,6 @@
     background-color: rgb(255, 99, 132);
 }
 
-
-
 .linechartlegend>ul>li {
     height: 50%;
     margin-left: 15px;
@@ -104,10 +110,28 @@
     //border-bottom: 1px dashed grey;
 }
 
-@media screen and (min-width: $breakpoint-tablet) {
+@media screen and (min-width: $breakpoint-mobile) {
     .linechart {
         max-width: 350px;
         max-height: 350px;
+    }
+    #smallpiechart0,#smallpiechart1 {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+    #fulllist>li{
+        grid-template-columns: 1fr 1fr;
+    }
+    .linechart {
+        max-width: 350px;
+        max-height: 350px;
+    }
+    #smallpiechart0,#smallpiechart1 {
+        width: 300px;
+        height: 300px;
     }
 }
 
@@ -115,6 +139,10 @@
     .linechart {
         max-width: 350px;
         max-height: 350px;
+    }
+    #smallpiechart0,#smallpiechart1 {
+        width: 350px;
+        height: 350px;
     }
 }
 
@@ -126,5 +154,9 @@
     .linechart {
         max-width: 500px;
         max-height: 500px;
+    }
+    #smallpiechart0,#smallpiechart1 {
+        width: 350px;
+        height: 350px;
     }
 }
