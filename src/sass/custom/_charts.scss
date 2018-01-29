@@ -60,6 +60,9 @@
     background-color: rgb(255, 205, 86);
 }
 
+#piechartlegend > .legend > li:nth-child(4)::before {
+    background-color: rgb(86, 255, 86);
+}
 
 /* Bolletjes voor legenda van linecharts */
 
