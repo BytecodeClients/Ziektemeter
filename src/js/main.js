@@ -10,7 +10,7 @@ $(document).ready(function () {
     });
   };
 
-  setInterval(increaseValues, 100);
+  setInterval(increaseValues, 1000);
 
   const ctx0 = document.getElementById("piechart").getContext('2d');
   // Big Pie Chart
