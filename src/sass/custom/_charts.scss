@@ -14,6 +14,16 @@
     justify-content: center;
 }
 
+.linechartcontainer {
+    grid-template-columns: 1fr 1fr;
+}
+
+.bigpiechart {
+    grid-template-columns: 3fr 5fr;
+    grid-gap: 20px;
+}
+
+
 #fulllist {
     margin-top: 40px;
 }
@@ -141,22 +151,22 @@
         max-height: 350px;
     }
     #smallpiechart0,#smallpiechart1 {
-        width: 350px;
-        height: 350px;
+        width: 320px;
+        height: 320px;
     }
 }
 
 @media screen and (min-width: $breakpoint-desktop) {
     #piechart {
-        max-width: 500px;
-        max-height: 500px;
+        max-width: 320px;
+        max-height: 320px;
     }
     .linechart {
         max-width: 500px;
         max-height: 500px;
     }
     #smallpiechart0,#smallpiechart1 {
-        width: 350px;
-        height: 350px;
+        width: 320px;
+        height: 320px;
     }
 }

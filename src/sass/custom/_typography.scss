@@ -109,6 +109,7 @@ footer {
 }
 .piechartdouble .headline{
     font-size: 1rem;
+    text-align: center;
 }
 
 .piechartdouble .legend li{
@@ -125,6 +126,9 @@ footer {
     }
     #fulllist>li>.counter {
         font-size: 3.2rem;
+    }
+    .piechartdouble .headline{
+        font-size: 1.3rem;
     }
 }
 
