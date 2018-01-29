@@ -99,35 +99,24 @@ gulp.task('assets', () => {
 gulp.task('sass', () => {
     return gulp.src(source.sass)
         .pipe(plumber())
-        .pipe(sourcemaps.init())
+        .pipe(sourcemaps.init()) // Comment this line for production build
         .pipe(sass())
         .pipe(autoprefixer('last 2 versions'))
         .pipe(cleanCss({compatibility: 'ie8'}))
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write()) // Comment this line for production build
         .pipe(gulp.dest(output.sass))
         .pipe(browserSync.stream());
 });
-
-// Compile Bootstrap scss
-// gulp.task('bootstrap', () => {
-//     return gulp.src(source.bootstrap)
-//         .pipe(sass().on('error', sass.logError))
-//         .pipe(sourcemaps.init())
-//         .pipe(cleanCss({compatibility: 'ie8'}))
-//         .pipe(sourcemaps.write())
-//         .pipe(gulp.dest(output.bootstrap))
-//         .pipe(browserSync.stream());
-// });
 
 // Process all custom Javascript files
 gulp.task('scripts-custom', () => {
     return gulp.src(source.scripts.custom)
         .pipe(plumber())
-        .pipe(sourcemaps.init())
+        .pipe(sourcemaps.init()) // Comment this line for production build
         .pipe(babel({presets: ['es2015']}))
         .pipe(concat('main.min.js'))
         .pipe(uglify())
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write()) // Comment this line for production build
         .pipe(gulp.dest(output.scripts));
 });
 
