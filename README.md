@@ -1,5 +1,7 @@
 # Ziektemeter
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/NooijenSolutions/Ziektemeter.svg)](https://greenkeeper.io/)
+
 Developed by Nooijen Web Solutions for S&H Uitgeverij.
 
 ## Installation
